@@ -1,0 +1,38 @@
+header{
+    max-width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("../img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+    ::before{
+        content: "";
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-image: linear-gradient(#155259, #BDE3F2);
+        opacity: 0.3;
+        z-index: -1;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .titulo{
+        width: 100vw;
+        text-align: center;
+        color: black;
+        z-index: 1;
+        h1{
+            font-size: 70px;
+            font-style: italic;
+        }
+        h2{
+            font-size: 30px;
+            font-weight: normal;
+        }
+    }
+}
