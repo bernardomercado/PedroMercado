@@ -53,7 +53,7 @@ body .navegador .navbar ul li a:hover {
 @media (max-width: 580px) {
   .navegador {
     justify-content: end !important;
-    padding: 10px;
+    padding: 20px;
   }
   .navegador .checkbtn {
     display: block;
@@ -135,8 +135,10 @@ header .titulo h2 {
   }
 }
 main {
-  width: 100%;
-  height: 600px;
+  background-color: white;
+  max-width: 100%;
+  min-height: 600px;
+  margin: 10px;
 }
 main .contenedor {
   margin-top: 30px;
@@ -145,8 +147,9 @@ main .contenedor {
   justify-content: space-around;
 }
 main .contenedor .imagenes {
-  width: 500px;
-  height: 300px;
+  width: 700px;
+  height: 500px;
+  overflow: hidden;
   position: relative;
 }
 main .contenedor .imagenes img {
@@ -156,7 +159,7 @@ main .contenedor .imagenes img {
 main .contenedor .imagenes .img1 {
   position: absolute;
   top: 100px;
-  left: 150px;
+  left: 300px;
 }
 main .contenedor .imagenes .img3 {
   position: absolute;
@@ -164,8 +167,8 @@ main .contenedor .imagenes .img3 {
   right: 180px;
 }
 main .contenedor .texto {
-  width: 500px;
-  height: 300px;
+  max-width: 500px;
+  max-height: 300px;
   display: flex;
   flex-direction: column;
 }
@@ -182,21 +185,93 @@ main .contenedor .texto p {
   text-align: justify;
 }
 
-aside {
+@media (max-width: 1200px) {
+  main {
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  main .contenedor {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .contenedor .imagenes {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 710px) {
+  main .contenedor .imagenes {
+    max-width: 450px;
+    min-height: 300px;
+    margin: auto;
+  }
+  main .contenedor .imagenes img {
+    width: 250px;
+    height: 150px;
+  }
+  main .contenedor .imagenes .img1 {
+    top: 50px;
+    left: 200px;
+  }
+  main .contenedor .imagenes .img3 {
+    top: 150px;
+  }
+  main .contenedor .texto {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 550px) {
+  main .contenedor .imagenes {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+  main .contenedor .imagenes img {
+    width: 100%;
+    height: 200px;
+  }
+  main .contenedor .imagenes .img1 {
+    position: static;
+  }
+  main .contenedor .imagenes .img2 {
+    position: static;
+  }
+  main .contenedor .imagenes .img3 {
+    position: static;
+  }
+}
+@media (max-width: 420px) {
+  main .contenedor .texto {
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 354px) {
+  main .contenedor .texto {
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 325px) {
+  main .contenedor .texto {
+    margin-bottom: 130px;
+  }
+}
+.servicios {
   background-color: #BDE3F2;
 }
-aside h3 {
+.servicios h3 {
   font-size: 30px;
   padding: 15px;
   text-align: center;
+  letter-spacing: 5px;
 }
-aside .tarjetas {
+.servicios .tarjetas {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 30px;
+  padding-bottom: 20px;
 }
-aside .tarjetas .tarjeta {
+.servicios .tarjetas .tarjeta {
   width: 300px;
   height: 400px;
   padding: 10px;
@@ -207,19 +282,19 @@ aside .tarjetas .tarjeta {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   transition: all 0.25seg;
 }
-aside .tarjetas .tarjeta:hover {
+.servicios .tarjetas .tarjeta:hover {
   background-color: #97c3d4;
   transform: translateY(-15px);
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
-aside .tarjetas .tarjeta img {
+.servicios .tarjetas .tarjeta img {
   width: 100%;
 }
-aside .tarjetas .tarjeta h4 {
+.servicios .tarjetas .tarjeta h4 {
   text-align: center;
   padding: 5px;
 }
-aside .tarjetas .tarjeta .btn {
+.servicios .tarjetas .tarjeta .btn {
   display: block;
   text-decoration: none;
   margin-top: 50px;
@@ -229,6 +304,13 @@ aside .tarjetas .tarjeta .btn {
   background-color: #042F40;
   border-radius: 5px;
 }
-aside .tarjetas .tarjeta .btn:hover {
+.servicios .tarjetas .tarjeta .btn:hover {
   font-weight: bold;
+}
+
+section h3 {
+  font-size: 30px;
+  padding: 15px;
+  text-align: center;
+  letter-spacing: 5px;
 }
