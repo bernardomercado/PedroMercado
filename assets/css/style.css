@@ -80,7 +80,7 @@ body .navegador .navbar ul li a:hover {
     padding: 10px !important;
   }
 }
-header {
+.headerIndex {
   max-width: 100vw;
   height: 100vh;
   background-image: url("../img/fondo.jpg");
@@ -92,7 +92,7 @@ header {
   justify-content: center;
   align-items: center;
 }
-header ::before {
+.headerIndex ::before {
   content: "";
   width: 100%;
   height: calc(100vh - 50px);
@@ -103,17 +103,17 @@ header ::before {
   opacity: 0.3;
   z-index: -1;
 }
-header .titulo {
+.headerIndex .titulo {
   width: 100vw;
   text-align: center;
   color: black;
   z-index: 1;
 }
-header .titulo h1 {
+.headerIndex .titulo h1 {
   font-size: 70px;
   font-style: italic;
 }
-header .titulo h2 {
+.headerIndex .titulo h2 {
   font-size: 30px;
   font-weight: normal;
 }
@@ -313,4 +313,114 @@ section h3 {
   padding: 15px;
   text-align: center;
   letter-spacing: 5px;
+}
+
+.headerContacto {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/assets/img/contacto.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerContacto ::before {
+  content: "";
+  width: 100%;
+  height: calc(100vh - 50px);
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-image: linear-gradient(#155259, #BDE3F2);
+  opacity: 0.3;
+  z-index: -1;
+}
+.headerContacto .texto {
+  z-index: 1;
+  text-align: center;
+}
+.headerContacto .texto h1 {
+  font-size: 70px;
+  font-style: italic;
+  z-index: 1000;
+}
+.headerContacto .texto h2 {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.contacto {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacto .formulario {
+  background-color: #042F40;
+  width: 90%;
+  max-width: 650px;
+  padding: 5px 35px 30px 35px;
+  margin: 30px;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacto .formulario .titulo {
+  color: black;
+  padding: 14px 0;
+}
+.contacto .formulario .titulo span {
+  color: white;
+}
+.contacto .formulario label {
+  font-size: 16px;
+  width: 100%;
+  margin-top: 10px;
+}
+.contacto .formulario label input {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+  outline: none;
+  border-bottom: 2px solid white;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  font-size: 14px;
+  color: white;
+}
+.contacto .formulario textarea {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+  outline: none;
+  border-bottom: 2px solid white;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  font-size: 14px;
+  color: white;
+  max-height: 150px;
+  min-height: 50px;
+}
+.contacto .formulario .boton {
+  width: 100%;
+  border: 1px solid black;
+  background-color: white;
+  font-size: 16px;
+  border: none;
+  color: black;
+  padding: 15px 0;
+  cursor: pointer;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.contacto .formulario .boton:hover {
+  background-color: rgba(47, 119, 128, 0.555);
 }
