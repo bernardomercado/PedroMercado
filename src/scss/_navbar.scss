@@ -7,10 +7,11 @@ body{
         z-index: 1000;
         background-color: #042F40;
         width: 100vw;
-        height: 50px;
+        height: 80px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
+        padding: 30px;
         #check{
             display: none;
         }
@@ -27,19 +28,24 @@ body{
                 }
             }
         }
+        .logo{
+            img{
+                height: 50px;
+            }
+        }
         .navbar{
             ul{
                 list-style: none;
                 display: flex;
                 li{
                     a{
-                        padding: 0 50px;
+                        padding: 0 30px;
                         text-decoration: none;
                         color: white;
+                        transition: background-color .5s;
                         &:hover{
-                            padding: 15px 50px;
+                            padding: 15px 30px;
                             background-color: #155259;
-                            font-weight: bold;
                         }
                     }
                 }
@@ -49,10 +55,9 @@ body{
 }
 
 
-@media(max-width: 580px){
+@media(max-width: 630px){
     .navegador{
-        justify-content: end !important;
-        padding: 20px;
+        padding-left: 5px !important;
         .checkbtn{
             display: block;
         }

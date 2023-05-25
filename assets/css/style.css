@@ -14,10 +14,11 @@ body .navegador {
   z-index: 1000;
   background-color: #042F40;
   width: 100vw;
-  height: 50px;
+  height: 80px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 30px;
 }
 body .navegador #check {
   display: none;
@@ -35,25 +36,27 @@ body .navegador label i:hover {
   border: solid 2px white;
   border-radius: 5px;
 }
+body .navegador .logo img {
+  height: 50px;
+}
 body .navegador .navbar ul {
   list-style: none;
   display: flex;
 }
 body .navegador .navbar ul li a {
-  padding: 0 50px;
+  padding: 0 30px;
   text-decoration: none;
   color: white;
+  transition: background-color 0.5s;
 }
 body .navegador .navbar ul li a:hover {
-  padding: 15px 50px;
+  padding: 15px 30px;
   background-color: #155259;
-  font-weight: bold;
 }
 
-@media (max-width: 580px) {
+@media (max-width: 630px) {
   .navegador {
-    justify-content: end !important;
-    padding: 20px;
+    padding-left: 5px !important;
   }
   .navegador .checkbtn {
     display: block;
@@ -365,13 +368,13 @@ section h3 {
   padding: 5px 35px 30px 35px;
   margin: 30px;
   border-radius: 10px;
-  color: white;
+  color: #14A1D9;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .contacto .formulario .titulo {
-  color: black;
+  color: #14A1D9;
   padding: 14px 0;
 }
 .contacto .formulario .titulo span {
@@ -411,10 +414,10 @@ section h3 {
 .contacto .formulario .boton {
   width: 100%;
   border: 1px solid black;
-  background-color: white;
+  background-color: #14A1D9;
   font-size: 16px;
   border: none;
-  color: black;
+  color: white;
   padding: 15px 0;
   cursor: pointer;
   border-radius: 2px;
@@ -422,5 +425,5 @@ section h3 {
   transition: all 0.5s ease;
 }
 .contacto .formulario .boton:hover {
-  background-color: rgba(47, 119, 128, 0.555);
+  background-color: rgba(20, 161, 217, 0.555);
 }
