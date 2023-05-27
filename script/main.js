@@ -1,41 +1,30 @@
+// Función para iniciar el contador cuando sea visible en pantalla
+function iniciarContador(elemento, valorInicial, valorObjetivo, intervalo) {
+  let valor = valorInicial;
+  let observer = new IntersectionObserver(function(entries) {
+    if (entries[0].isIntersecting) {
+      let interval = setInterval(function() {
+        if (valor < valorObjetivo) {
+          valor++;
+          elemento.textContent = valor;
+        } else {
+          clearInterval(interval);
+        }
+      }, intervalo);
+      observer.disconnect();
+    }
+  });
+  observer.observe(elemento);
+}
+
 // Contador de años de experiencia
 let contadorExperiencia = document.getElementById('contador__experiencia');
-let experienciaValue = 0;
-let experienciaTarget = 10; // Cambia este valor si deseas otro número objetivo
-
-let experienciaInterval = setInterval(function() {
-  if (experienciaValue < experienciaTarget) {
-    experienciaValue++;
-    contadorExperiencia.textContent = experienciaValue;
-  } else {
-    clearInterval(experienciaInterval);
-  }
-}, 180); // Cambia el valor de tiempo si deseas una velocidad de conteo diferente
+iniciarContador(contadorExperiencia, 0, 10, 180);
 
 // Contador de clientes
 let contadorClientes = document.getElementById('contador__clientes');
-let clientesValue = 0;
-let clientesTarget = 20; // Cambia este valor si deseas otro número objetivo
-
-let clientesInterval = setInterval(function() {
-  if (clientesValue < clientesTarget) {
-    clientesValue++;
-    contadorClientes.textContent = clientesValue;
-  } else {
-    clearInterval(clientesInterval);
-  }
-}, 90); // Cambia el valor de tiempo si deseas una velocidad de conteo diferente
+iniciarContador(contadorClientes, 0, 20, 90);
 
 // Contador de auditorias
 let contadorAuditorias = document.getElementById('contador__auditorias');
-let auditoriasValue = 0;
-let auditoriasTarget = 30; // Cambia este valor si deseas otro número objetivo
-
-let auditoriasInterval = setInterval(function() {
-  if (auditoriasValue < auditoriasTarget) {
-    auditoriasValue++;
-    contadorAuditorias.textContent = auditoriasValue;
-  } else {
-    clearInterval(auditoriasInterval);
-  }
-}, 45); // Cambia el valor de tiempo si deseas una velocidad de conteo diferente
+iniciarContador(contadorAuditorias, 0, 30, 45);
