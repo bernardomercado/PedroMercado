@@ -1,0 +1,35 @@
+.contador{
+    background-color: #1552594f;
+    width: 100%;
+    .contador__contenedor{
+        display: flex;
+        justify-content: space-around;
+        padding: 30px;
+        flex-wrap: wrap;
+        gap: 20px;
+        .contador__contenedor__item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .contador__contenedor__item__icon{
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+                justify-content: center;
+                text-align: center;
+                .fa-solid{
+                    font-size: 20px;
+                    padding-right: 5px;
+                }
+                .contador__contenedor__item__parrafo{
+                    font-size: 25px;
+                }
+            }
+
+            .contador__contenedor__item__circulo{
+                font-size: 30px;
+                font-weight: bold;
+            }
+        }
+    }
+}

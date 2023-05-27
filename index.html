@@ -12,7 +12,7 @@
 <body>
     <nav class="navegador">
         <div class="logo">
-            <a href=""><img src="./assets/img/logo.png" alt="logo"></a>
+            <a href="./index.html"><img src="./assets/img/logo.png" alt="logo"></a>
         </div>
         <label for="check" class="checkbtn">
             <i class="fa-solid fa-bars"></i>
@@ -24,10 +24,10 @@
                     <a href="#">Inicio</a>
                 </li>
                 <li>
-                    <a href="#">Servicios</a>
+                    <a href="#">Sobre Nosotros</a>
                 </li>
                 <li>
-                    <a href="#">Trabajos</a>
+                    <a href="#">Servicios</a>
                 </li>
                 <li>
                     <a href="./pages/contacto.html">Contacto</a>
@@ -44,80 +44,48 @@
     </header>
 
     <main>
-        <div class="contenedor">
-            <div class="texto">
-                <div class="sobremi">
+        <div class="inicio">
+            <div class="inicio__texto">
+                <div class="inicio__texto__contenedor">
                     <h3>Lorem, ipsum dolor.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam minima, assumenda in nihil odio autem facilis provident exercitationem amet vel nobis fugit libero mollitia placeat architecto, ab temporibus ad rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero corrupti eaque est ducimus saepe commodi voluptatum officia autem optio possimus vel consequatur ipsam facere incidunt iusto quia, reiciendis illum. Minima?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam minima, assumenda in nihil odio autem facilis provident exercitationem amet vel nobis fugit libero mollitia placeat architecto, ab temporibus ad rem. </p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam minima, assumenda in nihil odio autem facilis provident exercitationem amet vel nobis fugit libero mollitia placeat architecto, ab temporibus ad rem. </p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam minima, assumenda in nihil odio autem facilis provident exercitationem amet vel nobis fugit libero mollitia placeat architecto, ab temporibus ad rem. </p>
                 </div>
-                <div class="cursos">
-                    <h3>Formación</h3>
-                    <ul>
-                        <li>Curso 1</li>
-                        <li>Curso 2</li>
-                        <li>Curso 3</li>
-                        <li>Curso 4</li>
-                        <li>Curso 5</li>
-                    </ul>
-                </div>
+                <button class="inicio__texto__btn">Contactar</button>
             </div>
-            <div class="imagenes">
-                <div class="img1">
-                    <img src="./assets/img/sobre-mi.jpg" alt="Sobre mi">
-                </div>
-                <div class="img2">
-                    <img src="./assets/img/sobre-mi.jpg" alt="Sobre mi">
-                </div>
-                <div class="img3">
-                    <img src="./assets/img/sobre-mi.jpg" alt="Sobre mi">
-                </div>
+            <div class="inicio__imagen">
+                <img src="./assets/img/sobre-mi.jpg" alt="Sobre mi">
             </div>
         </div>
-    </main>
 
-    <aside>
-        <div class="servicios">
-            <h3>SERVICIOS</h3>
-            <div class="tarjetas">
-                <div class="tarjeta">
-                    <img src="./assets/img/sobre-mi.jpg" alt="">
-                    <h4>Lorem ipsum dolor sit.</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet veniam quo culpa!</p>
-                    <a class="btn" href="#">Más info.</a>
+        <section class="contador">
+            <div class="contador__contenedor">
+                <div class="contador__contenedor__item">
+                    <div class="contador__contenedor__item__icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <p class="contador__contenedor__item__parrafo">Años de experiencia: </p>
+                    </div>
+                    <p class="contador__contenedor__item__circulo">+<span id="contador__experiencia">0</span></p>
                 </div>
-                <div class="tarjeta">
-                    <img src="./assets/img/sobre-mi.jpg" alt="">
-                    <h4>Lorem ipsum dolor sit.</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet veniam quo culpa!</p>
-                    <a class="btn" href="#">Más info.</a>
+                <div class="contador__contenedor__item">
+                    <div class="contador__contenedor__item__icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <p class="contador__contenedor__item__parrafo">Clientes: </p>
+                    </div>
+                    <p class="contador__contenedor__item__circulo" >+<span id="contador__clientes">0</span></p>
                 </div>
-                <div class="tarjeta">
-                    <img src="./assets/img/sobre-mi.jpg" alt="">
-                    <h4>Lorem ipsum dolor sit.</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet veniam quo culpa!</p>
-                    <a class="btn" href="#">Más info.</a>
-                </div>
-                <div class="tarjeta">
-                    <img src="./assets/img/sobre-mi.jpg" alt="">
-                    <h4>Lorem ipsum dolor sit.</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet veniam quo culpa!</p>
-                    <a class="btn" href="#">Más info.</a>
-                </div>
-                <div class="tarjeta">
-                    <img src="./assets/img/sobre-mi.jpg" alt="">
-                    <h4>Lorem ipsum dolor sit.</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet veniam quo culpa!</p>
-                    <a class="btn" href="#">Más info.</a>
-                </div>
-                <div class="tarjeta">
-                    <img src="./assets/img/sobre-mi.jpg" alt="">
-                    <h4>Lorem ipsum dolor sit.</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet veniam quo culpa!</p>
-                    <a class="btn" href="#">Más info.</a>
+                <div class="contador__contenedor__item">
+                    <div class="contador__contenedor__item__icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <p class="contador__contenedor__item__parrafo">Auditorias realizadas: </p>
+                    </div> </p>
+                    <p class="contador__contenedor__item__circulo" >+<span id="contador__auditorias">0</span></p>
                 </div>
             </div>
-        </div>
-    </aside>
+        </section>
+
+    </main>
 
     <section>
         <h3>ALGUNOS DE MIS CLIENTES</h3>
@@ -132,5 +100,6 @@
     <footer>
     </footer>
 
+    <script src="./script/main.js"></script>
 </body>
 </html>
